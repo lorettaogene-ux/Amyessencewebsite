@@ -1,0 +1,49 @@
+/* AMY ESSENCE Custom Pink, White & Gold Styles */
+
+/* Color variables for brand aesthetic */
+:root {
+    --brand-pink: #fce7f3;
+    --brand-rose: #f472b6;
+    --brand-dark-pink: #db2777;
+    --brand-gold: #d97706;
+}
+
+/* Custom Scrollbar for Shopping Cart & Modals */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff1f2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f472b6;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #db2777;
+}
+
+/* Smooth Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.25s ease-out forwards;
+}
+
+/* Glassmorphism background utilities */
+.glass-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+}
